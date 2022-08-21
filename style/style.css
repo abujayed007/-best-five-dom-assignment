@@ -1,0 +1,18 @@
+#neymar{
+    height: 150px;
+}
+
+
+#header-text {
+    margin-right: 250px;
+    font-weight: 900;
+}
+#header-text h1{
+    color: orangered;
+    font-family: 'Berkshire Swash';
+  
+}
+header{
+    background: #000;
+ 
+}
