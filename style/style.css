@@ -14,5 +14,10 @@
 }
 header{
     background: #000;
- 
+
+}
+
+.card img{
+    height:40vh;
+    
 }
