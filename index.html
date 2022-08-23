@@ -31,7 +31,7 @@
     <!-- Header Section End  -->
     <main>
         <div class="d-flex">
-          <div class="row row-cols-3 mt-5">
+          <div class="row row-cols-3 p-3">
             <div class="col">
               <div class="card bg-black">
                 <img src="./Images/0x0.jpg" class="card-img-top" alt="...">
@@ -106,37 +106,44 @@
               </div>
             </div>
           </div>
-            <div class="row row-cols-1 g-3 mt-4 ps-2">
+            <div class="row row-cols-1 g-3 mt-auto ps-2">
               <div class="col">
                 <div class="bg-black text-white rounded  p-4 ">
                   <h1 class="text-center mt-4">Selected - V</h1>
                   <ol id="orderd-list" class="p-5 fs-3">
-                      <li>Messi</li>
+                      <!-- <li>Messi</li>
                       <li>Neymar</li>
                       <li>Ramos</li>
                       <li>Verati</li>
-                      <li>Marqunos</li>
+                      <li>Marqunos</li> -->
                   </ol>
                 </div>
               </div>
             <div class="col">
-              <div class="card bg-black p-4">
+              <div class="card bg-black p-4 mt-5">
                 <h1 class="mb-5 text-white text-center">Budget</h1>
                 <div class="d-inline-flex justify-content-around">
                   <h6 class="text-white me-auto text-muted">Per Player</h6>
-                  <input class="bg-black border-white w-50 rounded" type="text">
+                  <input id="player-field" class=" border-white w-50 rounded" type="text">
                 </div>
-                <button class="btn btn-info w-75 fw-bold text-white mx-auto mt-3">Calculate</button>
-                <h5 class="text-center mt-4 text-white">Player Expences</h5>
+                <button id="btn-calculate" class="btn btn-info w-75 fw-bold text-white mx-auto mt-3">Calculate</button>
+                <div class="d-inline-flex justify-content-around mt-3">
+                  <h6 class="text-white">Player Expences</h6>
+                  <p class="text-white fw-bold">$<span id="player-expence">00</span></p>
+                </div>
                 <div class="d-inline-flex justify-content-around mt-4">
                   <h6 class="text-white me-auto text-muted">Manager</h6>
-                  <input class="bg-black border-white rounded w-50" type="text">
+                  <input id="manager-field" class=" border-white rounded w-50" type="text">
                 </div>
                 <div class="d-inline-flex justify-content-around mt-4">
                   <h6 class="text-white me-auto text-muted">Coach</h6>
-                  <input class="bg-black border-white rounded w-50" type="text">
+                  <input id="coach-field" class=" border-white rounded w-50" type="text">
                 </div>
-                <button class="btn btn-info fw-bold text-white w-75 mx-auto mt-3">Calculate Total</button>
+                <button id="total-btn" class="btn btn-info fw-bold text-white w-75 mx-auto mt-3">Calculate Total</button>
+                <div class="d-inline-flex justify-content-around mt-3">
+                  <h6 class="text-white">Player Expences</h6>
+                  <p class="text-white fw-bold">$<span id="total-expence">00</span></p>
+                </div>
             </div>
           </div>
           </div>
@@ -144,5 +151,6 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="js/player.js"></script>
+    <script src="js/expence.js"></script>
   </body>
 </html>
