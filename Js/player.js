@@ -17,6 +17,14 @@ function topPlayers(){
 
 function playerSelect(players)
 {
+    if(players >= 5){
+        alert('You Can select Only five')
+    }
+    players.style.backgroundColor = "tomato"
+    players.style.border = "none"
+    players.style.color = "white"
+    players.innerText = 'SELECTED'
+    players.setAttribute('disabled', true)
     const playersName = players.parentNode.parentNode.children[0].innerText;
     allPlayers.push(playersName)
     // console.log(allPlayers)
