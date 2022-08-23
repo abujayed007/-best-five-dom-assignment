@@ -1,13 +1,17 @@
 document.getElementById('btn-calculate').addEventListener('click', function(){
+    const selectedPlayers = allPlayers.length
+
     const playerField = document.getElementById('player-field')
     const newPlayerFieldString = playerField.value;
     const newExpencesAmount = parseFloat(newPlayerFieldString);
-    
     playerField.value = '';
+
+    const totalCosts = selectedPlayers * newExpencesAmount;
 
     const playerExpences = document.getElementById('player-expence')
     const newPlayerExpence = playerExpences.innerText;
-    playerExpences.innerText =newExpencesAmount;
+    playerExpences.innerText = totalCosts;
+    
 
 })
 document.getElementById('total-btn').addEventListener('click', function(){
