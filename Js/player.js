@@ -17,8 +17,9 @@ function topPlayers(){
 
 function playerSelect(players)
 {
-    if(players >= 5){
+    if(allPlayers.length >= 5){
         alert('You Can select Only five')
+        return;
     }
     players.style.backgroundColor = "tomato"
     players.style.border = "none"
